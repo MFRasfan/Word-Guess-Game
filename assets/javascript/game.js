@@ -15,19 +15,12 @@ var guessesRemaining = 12;
 function Game() {
     
     randomWord = movies[Math.floor(Math.random() * movies.length)];
-
-    
     lettersOfWord = randomWord.split("");
-
-    
     blanks = lettersOfWord.length;
-
-    
     for (var i = 0; i < blanks; i++) {
         blanksAndCorrect.push("_");
     }
 
-   
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join("  ");
 
     console.log(randomWord);
@@ -71,8 +64,7 @@ function checkLetters(letter) {
 
 function complete() {
     console.log("total wins:" + wins + "| guesses remaining:" + guessesRemaining)
-
-    
+  
     if (lettersOfWord.toString() == blanksAndCorrect.toString()) {
      wins++;
     image()
@@ -80,15 +72,12 @@ function complete() {
        
      document.getElementById("totalwins").innerHTML = " " + wins;
 
-
     } 
-
     document.getElementById("currentword").innerHTML = "  " + blanksAndCorrect.join(" ");
     document.getElementById("guessesremaining").innerHTML = " " + guessesRemaining;
 }
 
 Game()
-
 
 document.onkeyup = function (event) {
     var guesses = String.fromCharCode(event.keyCode).toLowerCase();
@@ -102,7 +91,6 @@ document.onkeyup = function (event) {
    
     document.getElementById("alreadygussed").innerHTML = "  " + wrongGuess.join(" ");
 }
-
 
 function image() {
    

@@ -11,3 +11,20 @@ h2 {
     margin-top: 30px;
     text-align: center
 }
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: white;
+    color: red;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+  }
+
+  #youtube {
+      text-align: center
+  }
+
