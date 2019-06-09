@@ -35,7 +35,7 @@ function reset() {
     blanksAndCorrect = [];
    
    
- Game()
+Game()
 }
 function checkLetters(letter) {
     var letterInWord = false;
