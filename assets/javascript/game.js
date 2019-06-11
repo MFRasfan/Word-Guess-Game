@@ -1,4 +1,4 @@
-var movies = ["endegame", "infinitywar", "ageofultron", "theavengers"] 
+var movies = ["endgame", "infinitywar", "ageofultron", "theavengers"] 
 
 
 var randomWord = "";
